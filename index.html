@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neo AI Chat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6366f1;
+      --bg: #f9fafb;
+      --card: #fff;
+      --text: #111827;
+      --muted: #6b7280;
+      --radius: 16px;
+      --glow: 0 0 20px rgba(99, 102, 241, 0.6);
+      --gradient: linear-gradient(135deg, #6366f1, #8b5cf6);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 20px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: var(--card);
+      padding: 30px;
+      border-radius: var(--radius);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .app-header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .app-header img {
+      width: 90px;
+      height: 90px;
+      border-radius: 20px;
+      border: 2px solid #e5e7eb;
+    }
+
+    .app-info h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin: 0;
+    }
+
+    .app-info p {
+      margin-top: 6px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .rating {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .rating span {
+      color: gold;
+      font-size: 1.3rem;
+      margin-right: 4px;
+    }
+
+    .rating small {
+      margin-left: 10px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .download-btn {
+      margin-top: 25px;
+      background: var(--gradient);
+      color: white;
+      padding: 14px 30px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: var(--glow);
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .download-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(99, 102, 241, 0.9);
+    }
+
+    .reviews-section {
+      margin-top: 50px;
+    }
+
+    .reviews-section h2 {
+      font-size: 1.6rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .review {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      background: #f3f4f6;
+      padding: 16px 20px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+    }
+
+    .review img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+    }
+
+    .review-content {
+      flex: 1;
+    }
+
+    .review-content strong {
+      font-size: 1.05rem;
+      color: #4f46e5;
+    }
+
+    .review-content p {
+      margin: 4px 0 4px;
+      color: #374151;
+    }
+
+    .review-date {
+      font-size: 0.85rem;
+      color: #9ca3af;
+    }
+
+    @media (max-width: 600px) {
+      .app-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .app-header img {
+        margin-bottom: 12px;
+      }
+
+      .download-btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="app-header">
+      <img src="https://files.catbox.moe/6hwxos.png" alt="RgptAi Logo">
+      <div class="app-info">
+        <h1>Rgpt - Ai Smart Assistant</h1>
+        <p>Chatbot AI Super Canggih dan Modern</p>
+        <div class="rating">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+          <small>4.5 • 8.9K ulasan</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ganti link di bawah ini dengan link file APK kamu -->
+    <a href="https://download1336.mediafire.com/b4yfb1kty2pgZWD1JY_i1aNL7MBprSDAxvBIPjmz5-4-1ThJxQUsft2kg0M1DmCNqV0B1oz50cekJueZXcfBkMrtEPQO98JPPGnzSYR2n-9oEvOSdWte-wTH7Y-DAjbBrgpMN4Tam695VBscSggQMScl-J2WoQQkcSWAhFRn7Pr77w/2weqj3fxlfg4llt/RgptAI.apk" target="_blank" class="download-btn">
+      Unduh Sekarang
+    </a>
+
+    <div class="reviews-section">
+      <h2>Ulasan Pengguna</h2>
+
+      <!-- 11 ulasan -->
+      <div class="review"><img src="https://randomuser.me/api/portraits/men/10.jpg"><div class="review-content"><strong>Rizky Anwar</strong><p>Aplikasi AI ini keren banget! Interface-nya modern dan AI-nya responsif.</p><div class="review-date">1 hari lalu</div></div></div>
+      <div class="review"><img src="https://randomuser.me/api/portraits/women/12.jpg"><div class="review-content"><strong>Melly</strong><p>Chat AI ini sangat membantu pekerjaan saya setiap hari.</p><div class="review-date">2 hari lalu</div></div></div>
+      <div class="review"><img src="https://randomuser.me/api/portraits/men/3.jpg"><div class="review-content"><strong>Adi Petrus</strong><p>Desainnya modern banget, cocok untuk semua kalangan!</p><div class="review-date">2 hari lalu</div></div></div>
+      <div class="review"><img src="https://randomuser.me/api/portraits/women/5.jpg"><div class="review-content"><strong>Nadia Love</strong><p>AI-nya pintar dan cepat tanggap. Saya rekomendasikan!</p><div class="review-date">3 hari lalu</div></div></div>
+      <div class="review"><img src="https://randomuser.me/api/portraits/men/6.jpg"><div class="review-content"><strong>Dimas Ramadhan</strong><p>Sudah coba banyak chatbot, tapi ini yang terbaik.</p><div class="review-date">3 hari lalu</div></div></div>
+      <div class="review"><img src="https://randomuser.me/api/portraits/women/7.jpg"><div class="review-content"><strong>Lina</strong><p>Saya suka tampilannya! Bersih dan enak dilihat.</p><div class="review-date">4 hari lalu</div></div></div>
+      <div class="review"><img src="https://randomuser.me/api/portraits/men/8.jpg"><div class="review-content"><strong>Fahri</strong><p>Neo AI Chat benar-benar cerdas. Membantu banget.</p><div class="review-date">5 hari lalu</div></div></div>
+      <div class="review"><img src="https://randomuser.me/api/portraits/women/9.jpg"><div class="review-content"><strong>Maya Cute</strong><p>Responsif dan bisa menjawab dengan natural.</p><div class="review-date">6 hari lalu</div></div></div>
+      <div class="review"><img src="https://randomuser.me/api/portraits/men/11.jpg"><div class="review-content"><strong>Ilham pratama</strong><p>Fungsionalitasnya sangat bagus. Ringan dan cepat.</p><div class="review-date">6 hari lalu</div></div></div>
+      <div class="review"><img src="https://randomuser.me/api/portraits/women/13.jpg"><div class="review-content"><strong>Sabrina</strong><p>Super helpful buat kerja dan hiburan.</p><div class="review-date">7 hari lalu</div></div></div>
+      <div class="review"><img src="https://randomuser.me/api/portraits/men/14.jpg"><div class="review-content"><strong>Bima</strong><p>AI ini paling jago! Jawabannya cepat dan logis.</p><div class="review-date">7 hari lalu</div></div></div>
+
+    </div>
+  </div>
+
+</body>
+</html>
